@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!--link below from searching font awesome cdn, for close icon for smaller devices -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   </head>
   <body>
     <section class = "header">
       <nav>
-        <a href="index.html"><img scr = "images/bike.png""></a>
-        <div class="nav-links"> <! NOTE!!! -->
+        <a href="index.html"><img src="images/bike.png"></a>
+        <div class="nav-links" id="navLinks"> <!-- id identifies script? -->
+          <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close icon for small device menu -->
           <ul>
             <li><a href = "">HOME</a></li>
             <li><a href = "">ABOUT</a></li>
@@ -21,8 +24,39 @@
             <li><a href = "">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!-- menu icon for small devices -->
       </nav>
+    <div class="text-box"> <!-- Class name is text-box, in CSS make style changes under division of same name! -->
+      <h1>First second header</h1>
+      <p>Random text stuff <br> yaaaayyyyy</p>
+      <a href"" class="hero-btn">Check it out</a> <!-- button! -->
+    </div>
+
     </section>
 
+
+    <!----course----->
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        alskjdflaskjdflkasjdflkj 
+      </p>
+      
+    </section>
+
+    <!--------JavaScript for Toggle Menu ------->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0"; // in java??!! changes style to show menu 
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px"; 
+      }
+
+    </script>
   </body>
 </html>
