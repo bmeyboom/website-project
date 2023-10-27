@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Design Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!--link below from searching font awesome cdn, for close icon for smaller devices -->
+<script src="https://kit.fontawesome.com/dfd5dc561d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class = "sub-header">
+      <nav>
+        <a href="index.html"><img src="images/bike.png"></a>
+        <div class="nav-links" id="navLinks"> <!-- id identifies script? -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- close icon for small device menu -->
+          <ul>
+            <li><a href = "">HOME</a></li>
+            <li><a href = "">ABOUT</a></li>
+            <li><a href = "">RANDO</a></li>
+            <li><a href = "">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- menu icon for small devices -->
+      </nav>
+      <H1>Rando content</H1>
+
+    </section>
+
+    <!-- Rando content -->
+
+    <section class="rando-content">
+      <div class="row">
+        <div class="rando-left">
+          <img src="images/taiwan gorge waterfall.JPG" alt="">
+          <h2>Exploring gorges in Taiwan.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Felis eget velit aliquet sagittis. Turpis egestas sed tempus urna et pharetra pharetra massa. Viverra orci sagittis eu volutpat odio facilisis. Sit amet volutpat consequat mauris nunc congue. A pellentesque sit amet porttitor eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elit at imperdiet dui accumsan. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Facilisi cras fermentum odio eu feugiat pretium nibh. Ut consequat semper viverra nam libero justo laoreet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. In arcu cursus euismod quis. Aliquam sem et tortor consequat id.</p>  
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Felis eget velit aliquet sagittis. Turpis egestas sed tempus urna et pharetra pharetra massa. Viverra orci sagittis eu volutpat odio facilisis. Sit amet volutpat consequat mauris nunc congue. A pellentesque sit amet porttitor eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elit at imperdiet dui accumsan. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Facilisi cras fermentum odio eu feugiat pretium nibh. Ut consequat semper viverra nam libero justo laoreet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. In arcu cursus euismod quis. Aliquam sem et tortor consequat id.</p> 
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus. Felis eget velit aliquet sagittis. Turpis egestas sed tempus urna et pharetra pharetra massa. Viverra orci sagittis eu volutpat odio facilisis. Sit amet volutpat consequat mauris nunc congue. A pellentesque sit amet porttitor eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elit at imperdiet dui accumsan. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Facilisi cras fermentum odio eu feugiat pretium nibh. Ut consequat semper viverra nam libero justo laoreet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. In arcu cursus euismod quis. Aliquam sem et tortor consequat id.</p> 
+          
+          <div class="comment-box">
+
+            <h3>Leave a comment</h3>
+            
+            <form class="comment-form">
+              <input type="text" placeholder="Enter name">
+              <input type="email" placeholder="Enter email">
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+            
+          </div>
+        </div>
+        <div class="rando-right">
+          <h3>Rando Categories</h3>
+          <div>
+            <span>Sports</span>
+            <span>11</span>
+          </div>
+          <div>
+            <span>Maching learning</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Travel</span>
+            <span>35</span>
+          </div>
+          <div>
+            <span>Robotics</span>
+            <span>19</span>
+          </div>
+          <div>
+            <span>Software</span>
+            <span>90</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Footer -->     
+     <section class="footer">
+      <h4>About Me</h4>
+      <p>Stuff about me and <br>alskdjf laskjdf lkj</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+     </section>
+
+    <!--------JavaScript for Toggle Menu ------->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0"; // in java??!! changes style to show menu 
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px"; 
+      }
+
+    </script>
+  </body>
+</html>
