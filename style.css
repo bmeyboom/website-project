@@ -59,7 +59,7 @@ nav img{
 .text-box h1{/* for header */
   font-size: 35px;
 }
-.text-box p { /* for paragraph */
+.text-box p{ /* for paragraph */
   margin: 10px 0px 40px; /* top, left/right, bottom */
   font-size: 14px;
   color: #fff;
@@ -81,7 +81,7 @@ nav img{
   transition: 1s;
 }
 
-nav .fa{ /* Hide close icons for larger screen devices */
+nav .fa-solid{ /* Hide close icons for larger screen devices */
   display: none; 
 }
 
@@ -103,7 +103,7 @@ nav .fa{ /* Hide close icons for larger screen devices */
     z-index: 2;
     transition: 1s;
   }
-  nav .fa{ /* Display cross icon */ 
+  nav .fa-solid{ /* Display cross icon */ 
     display: block;
     color: #fff;
     margin: 10px;
