@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Design Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!--link below from searching font awesome cdn, for close icon for smaller devices -->
+<script src="https://kit.fontawesome.com/dfd5dc561d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class = "header">
+      <nav>
+        <a href="index.html"><img src="images/bike.png"></a>
+        <div class="nav-links" id="navLinks"> <!-- id identifies script? -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- close icon for small device menu -->
+          <ul>
+            <li><a href = "index.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT</a></li>
+            <li><a href = "course.html">COURSE</a></li>
+            <li><a href = "rando.html">RANDO</a></li>
+            <li><a href = "contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- menu icon for small devices -->
+      </nav>
+    <div class="text-box"> <!-- Class name is text-box, in CSS make style changes under division of same name! -->
+      <h1>First second header</h1>
+      <p>Random text stuff <br> yaaaayyyyy</p>
+      <a href"" class="hero-btn">Check it out</a> <!-- button! -->
+    </div>
+
+    </section>
+
+
+    <!---- page: course----->
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        alskjdflaskjdflkasjdflkj 
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>
+            HEADING 3
+          </h3>
+          <p>
+            RANDOM PARAGRAOIAASLDJFLJASDF
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>
+            HEADING 3.1
+          </h3>
+          <p>
+            RANDOM PARAGRAOIAASLDJFLJASDF
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>
+            HEADING 3.2
+          </h3>
+          <p>
+            RANDOM PARAGRAOIAASLDJFLJASDF
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+
+   <!----- campus page ----->
+    <section class="campus">
+      <h1> CAMPUS </h1>
+      <p> random text for paragraph</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/myro.png">
+          <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
+            <h3>CAFE</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/troll.png">
+          <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
+            <h3>TROLL</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/grapefruit.png">
+          <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
+            <h3>GRAPEFRUIT</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Facilities page -->
+    <section class="facilities">
+      <h1>Title for facilities</h1>
+      <p>descriptino paragroinasdf alsdkfjasdf</p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/coffee.png">
+          <h3>World Class Coffee</h3>
+          <p>Text blahasldkjf aslkdjf</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/sketchy ass hostel.jpg">
+          <h3>World Class Fruit Hostel</h3>
+          <p>Text blahasldkjf aslkdjf</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cooking class.jpg">
+          <h3>World Class Cooking</h3>
+          <p>Text blahasldkjf aslkdjf</p>
+        </div>
+      </div>
+
+    </section>
+
+     <!-------- testimonials ------->
+     <section class="testimonials">
+      <h1>SOME TESTIMONIALS</h1>
+      <p>descriptino paragroinasdf alsdkfjasdf</p>
+
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/helena.jpg">
+          <div>
+            <p>descriptoinasdfljasd ;lfkj asdlfkj </p>
+            <h3>Helena</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/burgee boys.jpg">
+          <div>
+            <p>descriptoinasdfljasd ;lfkj asdlfkj </p>
+            <h3>Burgee Boys</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+
+     <!-- Call to Action -->
+     <section class="cta">
+      <h1>Get<br>involved!!!</h1>
+      <a href="" class="hero-btn">CONTACT</a> <!-- A reused class! -->
+
+     </section>
+
+     <!-- Footer -->     
+     <section class="footer">
+      <h4>About Me</h4>
+      <p>Stuff about me and <br>alskdjf laskjdf lkj</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+     </section>
+
+    <!--------JavaScript for Toggle Menu ------->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0"; // in java??!! changes style to show menu 
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px"; 
+      }
+
+    </script>
+  </body>
+</html>
