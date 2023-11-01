@@ -6,10 +6,16 @@
     <title>Site Design Test</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
-<!--link below from searching font awesome cdn, for close icon for smaller devices -->
-<script src="https://kit.fontawesome.com/dfd5dc561d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--link below from searching font awesome cdn, for close icon for smaller devices -->
+    <script src="https://kit.fontawesome.com/dfd5dc561d.js" crossorigin="anonymous"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
   </head>
   <body>
     <section class = "sub-header">
@@ -67,17 +73,51 @@
         </div>
         <div class="contact-col">
 
-          <form id="contact-form" method="post"> <!-- action launches file to send email! -->
-            <input type="text" name = "name" placeholder="Enter your name" required> <!--Required field--> <!-- Name is for the php file! -->
-            <input type="email" name = "email" placeholder="Enter your email address" required>
-            <input type="text" name = "subject" placeholder="Enter your subject" required>
-            <textarea rows="8" name = "message" placeholder="Message" required></textarea>
-            <button type="submit" onClick="submitToAPI(event)" class="hero-btn red-btn">SEND MESSAGE</button>
-          </form>
+          <form id="contact-form" method="post">
+            <div class="form-group">
+             <h4>Name:</h4>
+             <input type="text" id="name-input" placeholder="Name..." class="form-control" />
+            </div>
+            <div class="form-group">
+             <h4>Phone:</h4>
+             <input type="phone" id="phone-input" placeholder="Phone..." class="form-control" />
+            </div>
+            <div class="form-group">
+             <h4>Email:</h4>
+             <input type="email" id="email-input" placeholder="Email..." class="form-control" />
+            </div>
+            <div class="form-group">
+             <h4>Message:</h4>
+             <textarea id="description-input" rows="3" placeholder="Message…" class="form-control" ></textarea>
+            </div>
+            <button type="submit" onClick="submitToAPI(event)" class="btn btn-primary">Submit</button>
+           </form>
 
         </div>
       </div>
     </section>
+    <!-------- JQuery for contact form submit ------->
+    <script>
+      function submitToAPI(e) {
+       e.preventDefault();
+       var URL = "https://xxxxxxxx.execute-api.us-east-1.amazonaws.com/01/contact";
+
+            var Namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!Namere.test($("#name-input").val())) {
+                         alert ("Name can not less than 2 char");
+                return;
+            }
+            var mobilere = /[0-9]{10}/;
+            if (!mobilere.test($("#phone-input").val())) {
+                alert ("Please enter valid mobile number");
+                return;
+            }
+            if ($("#email-input").val()=="") {
+                alert ("Please enter your email id");
+                return;
+            }
+          }
+    </script>
 
     
      <!-- Footer -->     
@@ -105,23 +145,6 @@
         navLinks.style.right = "-200px"; 
       }
 
-    </script>
-    <script>
-
-      function submitToAPI(e) {
-           e.preventDefault();
-           var URL = "https://7bcmte2db1.execute-api.us-west-2.amazonaws.com/submit-stage";
-    
-                var Namere = /[A-Za-z]{1}[A-Za-z]/;
-                if (!Namere.test($("#name").val())) {
-                             alert ("Name can not less than 2 char");
-                    return;
-                }
-                if ($("#email").val()=="") {
-                    alert ("Please enter your email id");
-                    return;
-                }
-              }
     </script>
   </body>
 </html>
