@@ -7,3 +7,9 @@ GreatStack: https://www.youtube.com/@GreatStackDev
 
 
 Alex Hyett: https://www.youtube.com/@alexhyettdev
+
+AWS tutorials: 
+
+* Deploying static site with AWS S3: 
+* Connecting dynamic form to static S3 hosting: https://www.secnix.com/engineering-titbits/build-serverless-contact-forms-for-amazon-s3-static-websites-with-aws-lambda-amazon-api-gateway-and-amazon-ses-aws-console/
+
