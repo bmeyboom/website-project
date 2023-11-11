@@ -115,8 +115,8 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
   }
 }
 
-/*----- page: course ------*/
-.course{
+/*----- page: projects ------*/
+.projects{
   width: 80%;
   margin: auto;
   text-align: center;
@@ -137,7 +137,7 @@ p{
   display: flex;
   justify-content: space-between;
 }
-.course-col{ /* red boxes for courses page */
+.projects-col{ /* red boxes for projectss page */
   flex-basis: 31%;
   background: #fff3f3;
   border-radius: 10px;
@@ -151,7 +151,7 @@ h3{
   font-weight: 600;
   margin: 10px 0;
 }
-.course-col:hover{
+.projects-col:hover{
   box-shadow: 0 0 20px 0px rgba(0,0,0,.2);
 }
 
@@ -353,38 +353,38 @@ h3{
   color: #fff; /* Makes text appear white when hovering so it doesn't blend in with hover background */
 }
 
-/* ---- rando content ---- */
-.rando-content{
+/* ---- travel content ---- */
+.travel-content{
   width: 80%;
   margin: auto;
   padding: 60px 0;
 }
-.rando-left{
+.travel-left{
   flex-basis: 65%;
 }
-.rando-left img{
+.travel-left img{
   width: 100%;
 }
-.rando-left h2{
+.travel-left h2{
   color: #222;
   font-weight: 600;
   margin: 30px 0;
 }
-.rando-left p{
+.travel-left p{
   color: #999;
   padding: 0;
 }
-.rando-right{
+.travel-right{
   flex-basis: 32%;
 }
-.rando-right h3{
+.travel-right h3{
   background: #f38a67;
   color: #fff;
   padding: 7px 0;
   font-size: 16px;
   margin-bottom: 20px;
 }
-.rando-right div{
+.travel-right div{
   display: flex;
   align-items: center;
   justify-content: space-between;
