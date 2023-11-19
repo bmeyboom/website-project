@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;700;800&family=Mukta:wght@200;400;600;700&family=Pixelify+Sans:wght@400;700&display=swap');
+
 *{
   margin: 0;
   padding: 0; 
   font-family: 'Pixelify Sans', sans-serif;
+}
+p {
+  font-family: 'Mukta';
+}
+h3 {
+  font-family: 'Dosis';
+  font-weight: 200;
 }
 .header{
   min-height: 100vh;
@@ -10,6 +19,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 nav{ /* navigation menu */
   display: flex;
@@ -117,7 +127,7 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
 
 /*----- page: projects ------*/
 .projects{
-  width: 80%;
+  width: 75%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -138,7 +148,7 @@ p{
   justify-content: space-between;
 }
 .projects-col{ /* red boxes for projectss page */
-  flex-basis: 31%;
+  flex-basis: 49%;
   background: #fff3f3;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -304,10 +314,36 @@ h3{
   text-align: center;
   padding: 30px 0;
 }
+.footer p{
+  font-family: 'Mukta';
+  font-size: 15px;
+}
 .footer h4{
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   margin-top: 20px;
   font-weight: 600;
+}
+.footer .fa{
+  color: #222;
+}
+.foot-btn{
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border: 1px solid #f38a67;
+  color:#f38a67;
+  padding: 6px 17px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer; /* Image needs to be smaller than certain size. Made largest dimension 32px. pointer is backup in case image doesn't work. */
+}
+.foot-btn:hover{
+  color: #fff;
+  border: 1px solid #fff;
+  background: #f38a67;
+  transition: 1s;
 }
 
 /*-------- About page ------*/
@@ -450,20 +486,18 @@ h3{
   margin: 10px;
   margin-right: 30px;
 }
-.contact-col div p{
-  padding: 0;
-}
 .contact-col div h5{
+  font-family: 'Mukta';
   font-size: 20px;
   margin-bottom: 5px;
   color: #555;
   font-weight: 400;
 }
-.contact-col input, .contact-col textarea{
+/* .contact-col input, .contact-col textarea{
   width: 100%;
   padding: 15px;
   margin-bottom: 17px;
   outline: none;
   border: 1px solid #ccc;
   box-sizing: border-box;
-}
+} */
