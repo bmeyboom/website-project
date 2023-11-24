@@ -7,6 +7,10 @@
 }
 p {
   font-family: 'Mukta';
+  color: #777;
+  font-size: 300;
+  line-height: 22px;
+  padding: 10px;
 }
 h3 {
   font-family: 'Dosis';
@@ -136,12 +140,6 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
   font-size: 36px;
   font-weight: 600;
 }
-.projects p{
-  color: #777;
-  font-size: 300;
-  line-height: 22px;
-  padding: 10px;
-}
 .row{
   margin-top: 5%;
   display: flex;
@@ -182,10 +180,17 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
+  padding-left: 10%;
+  padding-right: 20px;
+  padding-top: 10px;  
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
+}
+.modal-content ul, .modal-content li{
+  font-family: 'Mukta';
+  color: #777;
+  font-size: 300;
+  text-align: left;
 }
 /* The Close Button */
 .close {
