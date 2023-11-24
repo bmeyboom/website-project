@@ -21,7 +21,7 @@
             <li><a href = "index.html">HOME</a></li>
             <li><a href = "about.html">ABOUT</a></li>
             <li><a href = "projects.html">PROJECTS ETC.</a></li>
-            <li><a href = "travel.html">TRAVEL</a></li>
+            <!-- <li><a href = "travel.html">TRAVEL</a></li> -->
             <li><a href = "contact.html">CONTACT</a></li>
           </ul>
         </div>
@@ -39,27 +39,16 @@
         Whether work, personal, or through school, these are the projects </br> I've taken on over the past few years. Note: so far these don't link to anywhere.  </br>Come back soon for more content! 
       </p>
 
-      <!-- Testing a pop-up page--> 
-      <!-- <div class="container">
-        <button type="submit" class="btn-pop" onclick="openPopup()">popup!!!</button>
-        <div class="popup" id="popup">
-          <img src="/images/taiwan fruit.jpg">
-          <h2>Thank you</h2>
-          <p>Test message</p>
-          <button type="button" onclick="closePopup()">Ok</button>
-        </div>
-      </div> -->
-
       <div class="row">
-        <!-- <div class="projects-col">
+       <div class="projects-col" id = "myBtnPersonal">
           <h3>
             PERSONAL
           </h3>
           <p>
             DIY projects from the comfort of my own home.
           </p>
-        </div> -->
-        <div class="projects-col">
+        </div>
+        <div class="projects-col" id = "myBtnSchool">
           <h3>
             SCHOOL
           </h3>
@@ -67,7 +56,7 @@
             Anything from autonomous robots to testing thin-film coatings for LIGO to designing bear-proofing mechanisms for residential garbage bins. 
           </p>
         </div>
-        <div class="projects-col">
+        <div class="projects-col" id = "myBtnWork">
           <h3>
             WORK
           </h3>
@@ -75,6 +64,56 @@
             Designing a cloud infrastructure for a smart city as well as an interactive spatial data visualization. 
           </p>
         </div>
+      </div>
+
+      <!-- School Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Personal Projects</h3>
+          <p> 
+            This website!
+          </p>
+        </div>
+
+      </div>
+
+      <!-- School Modal -->
+      <div id="myModalPersonal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>School Projects</h3>
+          <p> 
+            <ul>
+              <li>Garbage bin bear-proofing device</li>
+              <li>Thin-film coating tester for LIGO</li>
+              <li>Autonomous UBC parking bot</li>
+              <li>Autonomous can-collecting robot</li>
+            </ul>
+          </p>
+        </div>
+
+      </div>
+      
+      <!-- Work Modal -->
+      <div id="myModalWork" class="modal">
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Work Projects</h3>
+          <p> 
+            <ul>
+              <li>Geospatial data visualization</li>
+              <li>Cloud infrastructure design for a smart city prototype</li>
+              <li>DIY multi-touch sensor development</li>
+            </ul>
+          </p>
+        </div>
+
       </div>
       
     </section>
@@ -147,32 +186,43 @@
         navLinks.style.right = "-200px"; 
       }
 
-      var popup = document.getElementById("popup")
+      var modal = document.getElementsByClassName("modal");
 
-      var btn = document.getElementById("col-1")
+      var btn = document.getElementsByClassName("projects-col");
+      
+      var span = document.getElementsByClassName("close");
 
-      var span = document.getElementsByClassName("close")[0];
-
-      btn.onclick = function openPopup(){
-        popup.style.display = "block";
+      btn[0].onclick = function() {
+        modal[0].style.display = "block";
+      }
+      btn[1].onclick = function() {
+        modal[1].style.display = "block";
+      }
+      btn[2].onclick = function() {
+        modal[2].style.display = "block";
       }
 
-      span.onclick = function(event){
-        popup.style.display = "none";
+      span[0].onclick = function(){
+        modal[0].style.display = "none";
+      }
+      span[1].onclick = function(){
+        modal[1].style.display = "none";
+      }
+      span[2].onclick = function(){
+        modal[2].style.display = "none";
       }
 
       window.onclick = function(event) {
-        if (event.target == popup) {
-          popup.style.display = "none";
+        if (event.target == modal[0]) {
+          modal[0].style.display = "none";
+        }
+        else if (event.target == modal[1]) {
+          modal[1].style.display = "none";
+        }
+        else if (event.target == modal[2]) {
+          modal[2].style.display = "none";
         }
       }
-
-      // function openPopup(){
-      //   popup.classList.add("open-popup")
-      // }
-      // function closePopup(){
-      //   popup.classList.remove("open-popup")
-      // }
 
     </script>
   </body>

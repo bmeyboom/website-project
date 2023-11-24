@@ -22,4 +22,4 @@ I used this site https://imgbb.com to generate a URL for the image I wanted to u
 ## Design
 
 * Using fonts in different areas: https://www.geeksforgeeks.org/how-to-use-google-fonts-in-css/ 
-* Pop-up page: https://www.youtube.com/watch?v=AF6vGYIyV8M 
+* Pop-up page: https://www.youtube.com/watch?v=AF6vGYIyV8M and https://www.w3schools.com/howto/howto_css_modals.asp 
