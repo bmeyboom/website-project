@@ -38,6 +38,18 @@
       <p>
         Whether work, personal, or through school, these are the projects </br> I've taken on over the past few years. Note: so far these don't link to anywhere.  </br>Come back soon for more content! 
       </p>
+
+      <!-- Testing a pop-up page--> 
+      <!-- <div class="container">
+        <button type="submit" class="btn-pop" onclick="openPopup()">popup!!!</button>
+        <div class="popup" id="popup">
+          <img src="/images/taiwan fruit.jpg">
+          <h2>Thank you</h2>
+          <p>Test message</p>
+          <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+      </div> -->
+
       <div class="row">
         <!-- <div class="projects-col">
           <h3>
@@ -52,7 +64,7 @@
             SCHOOL
           </h3>
           <p>
-            Anything from autonomous robot to testing thin-film coatings for LIGO to designing bear-proofing mechanisms for residential garbage bins. 
+            Anything from autonomous robots to testing thin-film coatings for LIGO to designing bear-proofing mechanisms for residential garbage bins. 
           </p>
         </div>
         <div class="projects-col">
@@ -67,29 +79,46 @@
       
     </section>
 
-   <!----- extracurriculars ----->
+   <!----- interests ----->
    <section class="campus">
-    <h1>EXTRACURRICULARS</h1>
-    <p>Experiences I've had the pleasure of taking on outside of work and school!</p>
+    <h1>INTERESTS</h1>
+    <p>Experiences I've had the pleasure of taking on outside of work and school. My main hobbies include <br>running and cycling, but I love hiking, backpacking, and bikepacking whenever I get the chance!</p>
 
     <div class="row">
       <div class="campus-col">
-        <img src="images/myro.png">
+        <img src="images/pne_crit.jpg">
         <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
-          <h3>UBC CYCLING</h3>
+          <h3>CYCLING</h3>
+          <p>Category 3 racer<br>
+            UBC Thunderbird Sport Clubs Teammate <br>of the Year 2022/2023<br>
+            UBC Cycling Marketing and Communcations <br>Executive 2022-2023<br>
+            Bikepacked the Circle Loop and the Olympic <br>Adventure Trail (Washington)
+          </p>
         </div>
       </div>
       <div class="campus-col">
-        <img src="images/troll.png">
+        <img src="images/whistler_50_2023.JPG">
         <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
           <h3>RUNNING</h3>
+          <p>
+          <b>Half Marathon</b> - 1:42:35<br>
+          <b>10k</b> - 43:25, 1st in category in the <br>2021 Granville Island Turkey Trot<br>
+          <b>8k</b> - 37:19<br>
+          <b>5k</b> - 21:19<br>
+          Member of Vancouver Falcons Athletic Club (VFAC)<br>
+          Trail running - 35km of the Baden Powell Trail, <br>32km Garibaldi traverse (Rubble Creek Parking to <br>Panorama Ridge to Cheakamus Lake Parking)<br>
+          </p>
         </div>
       </div>
       <div class="campus-col">
-        <img src="images/grapefruit.png">
+        <img src="images/cooking class.jpg">
         <div class="layer"> <!-- Puts layer over image! See CSS for colour filter. -->
-          <h3>GAP YEAR</h3>
-          <p>Testin</p>
+          <h3>ADVENTURE</h3>
+          <p><b>Overnight hiking</b> - Juan de Fuca trail, Rainbow <br>Lake (Pemberton)<br>
+            <b>Travel </b> - Japan, South Korea, France, Norway <br>Netherlands, Germany, Greece, Italy<br>
+            <b>Gap year</b> - backpacked the Southeast Asia<br>
+            <b>Canoe camping</b> Algonquin Park (Ontario), <br>Val d'Or (Quebec)
+          </p>
         </div>
       </div>
 
@@ -117,6 +146,33 @@
       function hideMenu(){
         navLinks.style.right = "-200px"; 
       }
+
+      var popup = document.getElementById("popup")
+
+      var btn = document.getElementById("col-1")
+
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function openPopup(){
+        popup.style.display = "block";
+      }
+
+      span.onclick = function(event){
+        popup.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // function openPopup(){
+      //   popup.classList.add("open-popup")
+      // }
+      // function closePopup(){
+      //   popup.classList.remove("open-popup")
+      // }
 
     </script>
   </body>

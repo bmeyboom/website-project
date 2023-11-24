@@ -155,6 +155,7 @@ p{
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  cursor: crosshair;
 }
 h3{
   text-align: center;
@@ -197,7 +198,7 @@ h3{
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 .layer:hover{ 
   background: rgba(226, 0, 0, 0.7); /* First 3 are RGB, last is opacity. */
@@ -216,6 +217,22 @@ h3{
 }
 .layer:hover h3{ /* Brings text halfway up images on hover.  */
   bottom: 60%; /* How high up the image the text goes. */
+  opacity: 1;
+}
+.layer p{
+  width: 100%;
+  font-weight: 200;
+  color: #fff;
+  font-size: 15px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0; /* Initial when no hover. */
+  transition: 0.5s;
+}
+.layer:hover p{
+  top: 40%; /* How high up the image the text goes. */
   opacity: 1;
 }
 
