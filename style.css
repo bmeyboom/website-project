@@ -226,9 +226,10 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  height: 500px;
 }
 .campus-col img{ /* Easiest if images all same dimensions... */
-  width: 100%; /* Fits image into size desired. */
+  height: 100%; /* Fits image into size desired. */
   display: block; /* Somehow makes corner fully rounded - before the bottom didn't quite fit properly in so was flat. */
 }
 .layer{ /* Puts layer/filter over image */
@@ -532,6 +533,10 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
   flex-basis: 48%;
   margin-bottom: 30px;
 }
+.contact-col h2, .contact-col p{
+  margin: 0;
+  align-items: left;
+}
 .contact-col div{
   display: flex;
   align-items: center;
@@ -550,11 +555,3 @@ nav .fa-solid{ /* Hide close icons for larger screen devices */
   color: #555;
   font-weight: 400;
 }
-/* .contact-col input, .contact-col textarea{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 17px;
-  outline: none;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-} */
