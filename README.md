@@ -13,7 +13,7 @@ Alex Hyett: https://www.youtube.com/@alexhyettdev
 * Deploying static site with AWS S3: 
 * Connecting dynamic form to static S3 hosting: https://www.secnix.com/engineering-titbits/build-serverless-contact-forms-for-amazon-s3-static-websites-with-aws-lambda-amazon-api-gateway-and-amazon-ses-aws-console/
 
-##Sharing
+## Sharing
 To update the metadate for you site, follow this tutorial: https://nickcarmont8.medium.com/how-to-add-a-website-thumbnail-for-sharing-your-html-site-on-social-media-facebook-linkedin-12813f8d2618. 
 
 I used this site https://imgbb.com to generate a URL for the image I wanted to use as my site's thumbnail image. I couldn't use a relative path to my image.
